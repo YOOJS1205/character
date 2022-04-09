@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+}
+
+.wrapper {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 0 auto;
+    margin-top: 300px;
+}
+
+.body {
+    position: relative;
+    margin: 0 auto;
+    width: 120px;
+    height: 330px;
+    border-radius: 60px 60px 20px 20px;
+    background-color: black;
+}
+
+.face {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    width: 90px;
+    height: 130px;
+    border-radius: 45%;
+    background-color: #ffffff;
+}
+
+.uppershadow {
+    position: absolute;
+    top: 25px;
+    width: 12px;
+    height: 20px;
+    background-color: purple;
+    opacity: 0.4;
+    border-radius: 50% 50% 30% 30%;
+}
+.uppershadow.left {
+    left: 35px;
+}
+.uppershadow.right {
+    right: 35px;
+}
+
+.eye {
+    position: absolute;
+    top: 50px;
+    width: 25px;
+    height: 15px;
+    background-color: black;
+    border-radius: 30px;
+}
+
+.eye.left {
+    left: 25px;
+}
+
+.eye.right {
+    right: 25px;
+}
+
+.lowershadow {
+    position: absolute;
+    top: 75px;
+    width: 12px;
+    height: 25px;
+    background-color: purple;
+    opacity: 0.4;
+    border-radius: 30% 30% 50% 50%;
+}
+.lowershadow.left {
+    left: 35px;
+}
+.lowershadow.right {
+    right: 35px;
+}
+
+.mouth {
+    position: absolute;
+    background-color: black;
+    border-radius: 15px 20px 20px 15px;
+    height: 15px;
+    top: 105px;
+    left: 45px;
+    animation: smile 2s linear infinite;
+}
+
+@keyframes smile {
+    0% {
+        width: 30px;
+        left: 45px;
+    }
+    50% {
+        width: 50px;
+        left: 35px;
+    }
+    100% {
+        width: 30px;
+        left: 45px;
+    }
+}
