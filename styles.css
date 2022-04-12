@@ -104,3 +104,80 @@ body {
         left: 45px;
     }
 }
+
+@keyframes open {
+    0% {
+        width: 0;
+        height: 0;
+        top: 210px;
+        left: 60px;
+    }
+    50% {
+        width: 100px;
+        height: 100px;
+        top: 160px;
+        left: 10px;
+    }
+    100% {
+        width: 0;
+        height: 0;
+        top: 210px;
+        left: 60px;
+    }
+}
+
+.real-mouth {
+    width: 100px;
+    height: 100px;
+    top: 160px;
+    left: 10px;
+    position: absolute;
+    border-radius: 20%;
+}
+
+.tongue {
+    position: absolute;
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    border-radius: 0 0 30% 30%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.upper-teeth {
+    position: absolute;
+    background-color: #ffffff;
+    width: 15px;
+    height: 20px;
+    border-radius: 0 0 20% 20%;
+}
+.upper-teeth:first-child {
+    left: 70px;
+}
+.upper-teeth:nth-child(2) {
+    left: 40px;
+}
+.upper-teeth:nth-child(3) {
+    left: 10px;
+}
+
+.lower-teeth {
+    position: absolute;
+    background-color: #ffffff;
+    width: 15px;
+    height: 20px;
+    border-radius: 20% 20% 0 0;
+    top: 80px;
+}
+
+.lower-teeth:first-child {
+    left: 70px;
+}
+.lower-teeth:nth-child(2) {
+    left: 40px;
+}
+.lower-teeth:last-child {
+    left: 10px;
+}
