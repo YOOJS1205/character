@@ -21,6 +21,20 @@ body {
     background-color: black;
 }
 
+.body:hover {
+    top: -100px;
+    animation: standup 1s linear;
+}
+
+@keyframes standup {
+    from {
+        top: 0;
+    }
+    to {
+        top: -100px;
+    }
+}
+
 .face {
     position: absolute;
     top: 10px;
@@ -105,27 +119,6 @@ body {
     }
 }
 
-@keyframes open {
-    0% {
-        width: 0;
-        height: 0;
-        top: 210px;
-        left: 60px;
-    }
-    50% {
-        width: 100px;
-        height: 100px;
-        top: 160px;
-        left: 10px;
-    }
-    100% {
-        width: 0;
-        height: 0;
-        top: 210px;
-        left: 60px;
-    }
-}
-
 .real-mouth {
     width: 100px;
     height: 100px;
@@ -133,17 +126,28 @@ body {
     left: 10px;
     position: absolute;
     border-radius: 20%;
+    background-color: #332a28;
 }
 
 .tongue {
     position: absolute;
+    z-index: 10;
     background-color: red;
-    height: 50px;
+    height: 100px;
     width: 50px;
-    border-radius: 0 0 30% 30%;
-    left: 50%;
-    top: 50%;
+    border-radius: 15% 15% 30% 30%;
+    left: 47%;
+    top: 90px;
     transform: translate(-50%, -50%);
+}
+
+.tongue-line {
+    position: absolute;
+    left: 25px;
+    top: 60px;
+    width: 1px;
+    height: 40px;
+    background-color: black;
 }
 
 .upper-teeth {
@@ -151,7 +155,8 @@ body {
     background-color: #ffffff;
     width: 15px;
     height: 20px;
-    border-radius: 0 0 20% 20%;
+    border-radius: 8% 8% 20% 20%;
+    border: 1px solid black;
 }
 .upper-teeth:first-child {
     left: 70px;
@@ -168,8 +173,9 @@ body {
     background-color: #ffffff;
     width: 15px;
     height: 20px;
-    border-radius: 20% 20% 0 0;
+    border-radius: 20% 20% 8% 8%;
     top: 80px;
+    border: 1px solid black;
 }
 
 .lower-teeth:first-child {
